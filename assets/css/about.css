@@ -1,0 +1,57 @@
+.about-us-text {
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-us-image-container {
+    border: 5px solid rgba(208,4,0,0.92);
+}
+
+.about-us-image {
+    max-width: 600px;
+    margin: 20px 20px -30px -30px;
+}
+
+.our-partners-section {
+    background-color: rgba(208,4,0,0.92);
+}
+
+.our-partners-section img {
+    max-width: 150px;
+}
+
+.partners-row {
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1650px) {
+    .about-us-image {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .about-us-info {
+        flex-wrap: wrap;;
+    }
+    .about-us-image {
+        max-width: 100%;
+    }
+    .about-us-image-container {
+        margin-top: 50px;
+    }
+    .our-partners-section img {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-col {
+        margin-left: 30px;
+    }
+
+    .partners-row {
+        flex-direction: column;
+    }
+}

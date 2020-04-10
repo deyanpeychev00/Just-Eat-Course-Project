@@ -1,0 +1,54 @@
+.banner-container {
+    background-image: url("../img/homepage-background.jpg");
+    min-height: calc(100vh - 68px);
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-content {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    color: #fff;
+}
+
+.banner-container h1 {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.banner-container p {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.banner-button {
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    margin: 15px 10px;
+    transition: background-color 0.5s;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.banner-button:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .banner-container h1 {
+        font-size: 42px;
+    }
+    .banner-container h1, .banner-container p {
+        padding: 0 20px;
+    }
+}

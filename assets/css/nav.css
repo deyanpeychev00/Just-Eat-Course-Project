@@ -1,0 +1,79 @@
+.topnav {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgba(24,24,24,0.92);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.topnav a.menu-link {
+    padding: 10px 20px;
+    margin: 15px 10px;
+}
+
+.topnav a.menu-link:hover, .topnav a.active {
+    background: hsla(0,0%,100%,.15);
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav a img.logo{
+    max-height: 35px;
+    padding: 15px 20px 10px 20px;
+}
+
+.topnav a.logout-link {
+    float: right;
+}
+
+
+.links-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .topnav a.menu-link {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none !important;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav .links-container a.menu-link{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .menu-link-avatar{
+        margin-left: 0;
+    }
+}

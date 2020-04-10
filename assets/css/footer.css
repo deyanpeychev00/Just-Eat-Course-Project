@@ -1,0 +1,49 @@
+footer {
+    background-image: url("../img/reservation-background.jpg");
+    min-height: 20vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 20px;
+}
+
+.copyright {
+    padding: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.65);
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright-link {
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-button {
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    margin: 15px 10px;
+    transition: background-color 0.5s;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.footer-button:hover {
+    background-color: rgba(255,255,255, 0.2);
+}

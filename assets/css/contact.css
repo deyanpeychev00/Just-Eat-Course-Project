@@ -1,0 +1,114 @@
+.form-row {
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form-col {
+    flex-grow: 1;
+}
+
+.map-container iframe {
+    width: 30vw;
+    height: 50vh;
+    padding: 20px;
+    border: 0;
+}
+
+.map-container {
+    border: 5px solid rgba(208,4,0,0.92);
+}
+
+.form-container {
+    padding: 50px 0;
+}
+
+.form-container p {
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+}
+
+p.error-message, p.success-message {
+    margin: 0;
+    padding: 0;
+}
+
+p.error-message {
+    color: rgba(208,4,0,0.92);
+}
+p.success-message {
+    color: #388e3c;
+}
+
+form#orderForm .row {
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+form#orderForm .col.first-col,
+form#orderForm .col.last-col {
+    width: 50%;
+}
+form#orderForm .col.first-col {
+    padding: 0 10px 0 0;
+}
+form#orderForm .col.last-col {
+    padding: 0 0 0 10px;
+}
+
+.form-info {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=date],
+input[type=time],
+textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-button {
+    margin-top: 20px;
+    width: 100%;
+    border: 3px solid #388e3c;
+    background-color: #388e3c;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+
+}
+.form-button:hover {
+    background-color: transparent;
+    color: #388e3c;
+}
+
+@media screen and (max-width: 1280px) {
+    .form-row .col {
+        width: 100%;
+    }
+
+    .map-container iframe {
+        width: calc(100% - 40px);
+    }
+
+    form#orderForm {
+        padding-bottom: 50px;
+    }
+}

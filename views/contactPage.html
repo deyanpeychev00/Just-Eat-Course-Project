@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make a Reservation</title>
+    <link rel='icon' href='../assets/favicon/favicon.ico' type='image/x-icon'>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div id="nav-container"></div>
+
+<section class="form-container">
+    <div class="section-heading">
+        <h2>Place your order</h2>
+        <div class="section-heading-underline"></div>
+    </div>
+    <div class="section-container">
+        <p>Please enter the details below and we will contact you for confirmation.</p>
+        <div class="row form-row">
+            <div class="col form-col">
+                <form id="orderForm">
+                    <div class="row">
+                        <input id="firstName" type="text" name="firstName" placeholder="First name">
+                    </div>
+                    <div class="row">
+                        <input id="lastName" type="text" name="lastName" placeholder="Last name">
+                    </div>
+                    <div class="row">
+                        <input id="email" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="row">
+                        <input id="phone" type="text" name="phone" placeholder="Phone (088-888-8888 / 0888888888 / 088 888 8888)">
+                    </div>
+                    <div class="row form-info-row">
+                        <p class="form-info">Date and Time for delivery:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col first-col">
+                            <input id="date" type="date" name="date" placeholder="Date">
+                        </div>
+                        <div class="col last-col">
+                            <input id="time" type="time" name="time" placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="row form-info-row">
+                        <p class="form-info">Additional information about your order (optional):</p>
+                    </div>
+                    <div class="row">
+                        <textarea id="additionalInfo"></textarea>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="form-button">Submit order</button>
+                    </div>
+                    <div class="row error-message-row">
+                        <p class="error-message" id="error-message"></p>
+                    </div>
+                    <div class="row success-message-row">
+                        <p class="success-message" id="success-message"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.3777166251652!2d24.712382517829596!3d42.15767476055488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acce20719cf3e1%3A0x614581f6f00d030d!2z0J_QoyDQvdC-0LLQsCDRgdCz0YDQsNC00LA!5e0!3m2!1sen!2sbg!4v1586522945613!5m2!1sen!2sbg"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div id="footer-container"></div>
+
+<script src="../scripts/init.js"></script>
+<script src="../scripts/variables.js"></script>
+<script src="../scripts/orderPage.js"></script>
+<script src="../scripts/models/OrderFormDataModel.js"></script>
+<script src="../scripts/models/OrderFormResponseModel.js"></script>
+</body>
+</html>

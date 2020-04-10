@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.section-container {
+    padding: 50px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.section-heading-underline {
+    height: 5px;
+    width: 100px;
+    margin: auto;
+    background-color: rgba(208,4,0,0.92);
+    border-radius: 20px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col {
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 768px){
+    .col {
+        padding: 0;
+    }
+}
